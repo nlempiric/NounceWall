@@ -1,0 +1,45 @@
+@font-face {
+    font-family: "pt1";
+    src: url('./fonts/PT-Root-UI_Bold.woff') format('woff');
+    /* font-weight: 300; */
+}
+@font-face {
+    font-family: "pt2";
+    src: url('./fonts/PT-Root-UI_Bold.woff2') format('woff2');
+    /* font-weight: 300; */
+}
+@font-face {
+    font-family: "pt3";
+    src: url('./fonts/PT-Root-UI_Light.woff') format('woff');
+    /* font-weight: 300; */
+}
+@font-face {
+    font-family: "pt4";
+    src: url('./fonts/PT-Root-UI_Light.woff2') format('woff2');
+    /* font-weight: 300; */
+}
+@font-face {
+    font-family: "pt5";
+    src: url('./fonts/PT-Root-UI_Medium.woff') format('woff');
+    /* font-weight: 300; */
+}
+@font-face {
+  font-family: "pt6";
+  src: url('./fonts/PT-Root-UI_Medium.woff2') format('woff2');
+  /* font-weight: 300; */
+}
+@font-face {
+  font-family: "pt7";
+  src: url('./fonts/PT-Root-UI_Regular.woff') format('woff');
+  /* font-weight: 300; */
+}
+@font-face {
+  font-family: "pt8";
+  src: url('./fonts/PT-Root-UI_Regular.woff2') format('woff2');
+  /* font-weight: 300; */
+}
+@font-face {
+  font-family: "dg1";
+  src: url('./fonts/PressStart2P-Regular.ttf') format('truetype');
+
+}
