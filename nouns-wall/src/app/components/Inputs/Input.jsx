@@ -27,11 +27,11 @@ const Input = () => {
             Creation Date <BiCaretDown fontSize={20} />
           </button>
           {isOpen && (
-            <div className="w-full absolute block bg-[#D9D9D9] left-0 top-16 text-[16px] font-medium rounded-lg">
-              <button className="w-full border-b-1 border-black py-3 hover:bg-[#4A5568]">
+            <div className="w-full absolute block bg-[#D9D9D9] left-0 top-16 text-[14px] rounded-lg border-2 border-[#4A5568] ">
+              <button className="w-full border-b-2 border-[#4A5568] py-3 hover:bg-[#4A5568]">
                 Likes
               </button>
-              <button className="w-full border-b-1 border-black py-3 hover:bg-[#4A5568]">
+              <button className="w-full border-b-2 border-[#4A5568] py-3 hover:bg-[#4A5568]">
                 Name
               </button>
               <button className="w-full py-3 hover:bg-[#4A5568]">
