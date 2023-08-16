@@ -26,7 +26,7 @@ const UserDetails = () => {
     <>
       <div className="container mx-auto flex flex-col py-10 text-white gap-5">
         <div className="">
-            <Image src={userImage}/>
+            <Image src={userImage} alt="Image"/>
         </div>
         <div className="flex gap-4 items-center">
             <h1 className="font-[dg1] text-3xl">User Name</h1>

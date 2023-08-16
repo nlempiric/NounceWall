@@ -6,27 +6,30 @@ import {NextUIProvider} from "@nextui-org/react";
 
 import { EthereumClient, w3mConnectors, w3mProvider } from '@web3modal/ethereum'
 import { Web3Modal } from '@web3modal/react'
-import { configureChains, createConfig, WagmiConfig } from 'wagmi'
+import { configureChains, WagmiConfig,createConfig} from 'wagmi'
 import { arbitrum, mainnet, polygon } from 'wagmi/chains'
 
-const chains = [mainnet]
+//---------------
+const chains1 = [mainnet]
 const projectId = 'efc7f3f2e52f6d9fcceaaeeee2283265'
 
-const { publicClient } = configureChains(chains, [w3mProvider({ projectId })])
+const { publicClient } = configureChains(chains1, [w3mProvider({ projectId })])
+
 const wagmiConfig = createConfig({
   autoConnect: true,
-  connectors: w3mConnectors({ projectId, chains }),
-  publicClient
+  connectors: w3mConnectors({ projectId, chains1 }),
+  publicClient,
 })
-const ethereumClient = new EthereumClient(wagmiConfig, chains)
+const ethereumClient = new EthereumClient(wagmiConfig, chains1)
 
 
 export default function RootLayout({ children }) {
+  // console.log("wagmiiiiii",wagmiConfig)
   return (
     <>
     <html lang="en">
       <body>
-      {/* <NextUIProvider> */}
+      <NextUIProvider>
       <WagmiConfig config={wagmiConfig}>
         <Navbar/>
         {children}
@@ -35,7 +38,7 @@ export default function RootLayout({ children }) {
 
       <Web3Modal projectId={projectId} ethereumClient={ethereumClient} />
           
-      {/* </NextUIProvider> */}
+      </NextUIProvider>
       </body>
     </html>
     </>

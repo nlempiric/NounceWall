@@ -25,7 +25,7 @@ const Navbar = () => {
       <div className="bg-[#A19FA9] h-20 flex items-center lg:justify-between">
         <div className="container mx-auto flex justify-between items-center">
           <div className="flex items-center">
-            <Image src={logoImage} />
+            <Image src={logoImage} alt="Image"/>
             <div>
               <Link href="/">
                 <h1 className="text-2xl xl:text-lg font-[dg1]">Nouns Wall</h1>

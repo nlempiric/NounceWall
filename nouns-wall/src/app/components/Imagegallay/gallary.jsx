@@ -24,17 +24,18 @@ const Gallery = ({imageCardData}) => {
               <Image
                 src={slug}
                 className="h-full w-full object-cover object-center"
+                alt="Image"
               />
             </div>
 
             {/* Star Icon */}
-            <Image src={fstar} className="absolute top-0 left-0 " />
+            <Image src={fstar} className="absolute top-0 left-0 " alt="Image"/>
 
             {/* Title and Heart */}
             <div className="flex justify-between pt-2">
               <p className="mr-2">{card.title}</p>
               <div className="flex items-center">
-                <Image src={heart} className="mr-1" />
+                <Image src={heart} className="mr-1" alt="Image"/>
                 <p className="">{card.likes}</p>
               </div>
             </div>

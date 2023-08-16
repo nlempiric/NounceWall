@@ -33,7 +33,7 @@ export default function Home() {
     <div className='container mx-auto w-3/5 my-12'>
       <Input/>
       <div className="col-span-4">
-        <Image src={bannerImage} className="w-full h-auto" />
+        <Image src={bannerImage} className="w-full h-auto" alt="Image"/>
       </div>
       <Gallary imageCardData={imageCardData}/> 
       <div className="col-span-4 mt-28 ml-3 mr-3">

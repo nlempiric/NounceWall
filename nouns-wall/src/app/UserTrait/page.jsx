@@ -60,7 +60,7 @@ const UserTrait = () => {
                     <p className="text-sm">Head Trait</p>
                     <div className="flex items-center w-full py-3">
                     
-                        <Image style={{objectFit:"fill",width:"100%"}} src={TopModalImage}/>
+                        <Image style={{objectFit:"fill",width:"100%"}} src={TopModalImage} alt="Image"/>
                     
                     </div>
                     <div className="flex justify-between">
@@ -72,7 +72,7 @@ const UserTrait = () => {
                     {gridData.map((igrid)=>
                     (
                         <div key={igrid.id} className="w-full h-full">
-                            <Image src={igrid.image} width={130} height={100} style={{objectFit:"fill",borderRadius:"12px"}}/>
+                            <Image src={igrid.image} width={130} height={100} style={{objectFit:"fill",borderRadius:"12px"}} alt="Image"/>
                         </div>
                     ))}
                     </div>

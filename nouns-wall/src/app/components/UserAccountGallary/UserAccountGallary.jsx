@@ -19,12 +19,12 @@ const UserAccountGallary = ({userFavouriteData,setIsModalOpen,isModalOpen}) => {
     (
         <div key={card.id} className="bg-white relative w-fit text-black p-2" >
             <div>
-                <Image src={slug}/>
+                <Image src={slug} alt="Image"/>
             </div>
             <div className="flex justify-between pt-1">
                 <p className="mr-2">{card.title}</p>
                 <div className="flex items-center">
-                <Image src={heart} className="mr-1" />
+                <Image src={heart} className="mr-1" alt="Image"/>
                 <p className="">212</p>
                 </div>
             </div>

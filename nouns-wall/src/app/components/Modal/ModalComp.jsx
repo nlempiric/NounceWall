@@ -324,7 +324,7 @@ const ModalComp = ({setIsModalOpen}) => {
                 </div>
                 <div className="flex items-center">
                   <div className="w-[288px] h-[288px] relative ">
-                    <Image style={{objectFit:"cover"}} src={selectedFile==null ?  modalImage : imageUrl} fill={true}/>
+                    <Image style={{objectFit:"cover"}} src={selectedFile==null ?  modalImage : imageUrl} fill={true} alt="Image"/>
                   </div>
                 </div>
               </div>
